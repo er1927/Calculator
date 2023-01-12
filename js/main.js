@@ -1,21 +1,15 @@
 function add(x, y) {
     return x + y;
 }
-// console.log(add(2,3)); 
-
 function substract(x, y) {
     return x - y;
 }
-// console.log(substract(10,8));
 function multiply(x, y) {
     return x * y;
 }
-// console.log(multiply(2, 8));
 function divide(x, y) {
     return x / y;
 }
-// console.log(divide(15, 2));
-
 function operate(x, y, operator) {
     x=Number(x);
     y=Number(y)
@@ -32,3 +26,11 @@ function operate(x, y, operator) {
             return null;
     }
 }
+let previousOperation = document.querySelector(".previousOperation");
+let currentResult = document.querySelector(".currentResult");
+
+function showOnDisplay() {
+    // previousOperation.innerHTML= "testing prevOp"; // WORKS
+    // currentResult.innerHTML= "testing currRes"; // WORKS
+}
+showOnDisplay();

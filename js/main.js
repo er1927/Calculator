@@ -28,9 +28,12 @@ function operate(x, y, operator) {
 }
 let previousOperation = document.querySelector(".previousOperation");
 let currentResult = document.querySelector(".currentResult");
+let button = document.querySelectorAll('button');
+// console.log(button) // works
 
-function showOnDisplay() {
-    // previousOperation.innerHTML= "testing prevOp"; // WORKS
-    // currentResult.innerHTML= "testing currRes"; // WORKS
-}
-showOnDisplay();
+
+
+//     // previousOperation.innerHTML= "testing prevOp"; // WORKS
+//     // currentResult.innerHTML= "testing currRes"; // WORKS
+     button.forEach(button => {button.addEventListener("click", () => previousOperation.innerHTML = button.value)})
+
